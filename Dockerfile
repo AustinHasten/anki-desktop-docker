@@ -30,7 +30,7 @@ RUN apt autoremove -y
 
 # Create a config directory to be mounted
 RUN mkdir -p /config/.local/share
-run find . -maxdepth 1 -type d
+
 COPY ./root /
 
 EXPOSE 3000 8765
